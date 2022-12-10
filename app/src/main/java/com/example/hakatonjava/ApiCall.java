@@ -14,7 +14,7 @@ public class ApiCall {
         Request request = new Request.Builder()
                 .url(url)
                 .build();
-        Response response = client.newCall(request).execute();
+         Response response = client.newCall(request).execute();
         return response.body().string();
     }
 

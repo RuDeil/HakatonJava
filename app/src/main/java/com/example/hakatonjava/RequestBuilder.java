@@ -8,7 +8,7 @@ public class RequestBuilder {
 
 
         //Login request body
-        public RequestBody LoginBody(String username, String password, String token) {
+         public RequestBody LoginBody(String username, String password, String token) {
             return new FormBody.Builder()
                     .add("action", "login")
                     .add("format", "json")

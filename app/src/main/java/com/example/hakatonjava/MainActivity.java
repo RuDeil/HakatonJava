@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 RequestBuilder requestBuilder = new RequestBuilder();
                 RequestBody requestBody = requestBuilder.LoginBody(UserNumber, PassNumber, "");
                 HttpUrl url = requestBuilder.buildURL();
-             ApiCall apiCall = new ApiCall();
+              ApiCall apiCall = new ApiCall();
                 client = new OkHttpClient.Builder()
                         .readTimeout(20, TimeUnit.SECONDS)
                         .build();
